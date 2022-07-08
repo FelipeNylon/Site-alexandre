@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site cadastro </title>
+</head>
+<body>
+ 
+    <h1>Cadastro:</h1>
+    <form action="" method="post">
+  <label for="fname">Nome Completo:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Endereço fisico:</label><br>
+  <input type="text" id="lname" name="lname">
+  <br>
+  <label for="lname">Email:</label><br>
+  <input type="email" id="email" name="email">
+  <br>
+  <label for="lname">Idade:</label><br>
+  <input type="number" id="idade" name="idade">
+  <br>
+  <label for="lname">Profissão:</label><br>
+  <select id="profissao" name="profissao">
+    <option value="Engenheiro">Engenheiro</option>
+    <option value="Analista">Analista</option>
+    <option value="Design">Design</option>
+    <option value="Economista">Economista</option>
+  </select>
+  <br>
+  <label for="date">Data de cadastramento:</label><br>
+  <input type="date" id="date" name="date">
+  
+    </form>
+
+
+    <script src =
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+    </head> 
+      
+    <body style = "text-align:center;">
+           
+          
+        <p id = "GFG_UP" style = 
+            "font-size: 16px; font-weight: bold;">     
+        </p>
+          
+        <button> 
+            Enviar
+        </button>
+          
+        <p id = "GFG_DOWN" style = 
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+           
+            $('button').on('click', function() {
+                alert("Cadastramento Efetuado com sucesso");
+                $('body').css('background', '#add8e6');
+                $('#GFG_DOWN').text("Cor de Fundo Alterada!");
+                
+            }); 
+
+ 
+        </script> 
+
+
+</body>
+</html>
